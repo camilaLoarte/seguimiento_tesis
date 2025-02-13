@@ -1,0 +1,55 @@
+/* Estilos generales para la sección */
+section {
+    padding: 20px;
+    background-color: #f9f9f9; /* Color de fondo claro */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin: 20px 0; /* Margen entre secciones */
+}
+
+/* Estilo para el encabezado */
+h1 {
+    font-size: 2rem; /* Tamaño del texto grande */
+    color: #003366; /* Azul oscuro */
+    margin-bottom: 15px; /* Espaciado inferior */
+}
+
+/* Estilo para el enlace de registro */
+a {
+    display: inline-block;
+    margin-bottom: 15px; /* Espacio entre el enlace y la tabla */
+    color: #ffffff; /* Texto blanco */
+    background-color: #003366; /* Fondo azul oscuro */
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+a:hover {
+    background-color: #005999; /* Cambio de color en hover */
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Colapsar bordes */
+    margin-top: 10px; /* Espacio superior */
+}
+
+/* Estilos para las celdas de la tabla */
+th, td {
+    padding: 12px; /* Espaciado interno */
+    text-align: left; /* Alineación a la izquierda */
+    border-bottom: 1px solid #dddddd; /* Línea inferior */
+}
+
+th {
+    background-color: #003366; /* Fondo azul oscuro para encabezados */
+    color: #ffffff; /* Texto blanco para encabezados */
+}
+
+/* Estilo para el cuerpo de la tabla */
+tbody tr:hover {
+    background-color: #f1f1f1; /* Color de fondo al pasar el mouse */
+}

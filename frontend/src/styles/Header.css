@@ -1,0 +1,68 @@
+/* General styles for header */
+.main-header {
+    background-color: #003366; /* Azul oscuro */
+    color: #ffffff; /* Texto blanco */
+    padding: 20px 5%; /* Espaciado más flexible */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra más sutil */
+    text-align: center; /* Alineación del texto */
+}
+
+/* Contenedor principal del header */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Espaciado entre logo y texto */
+}
+
+/* Estilo del logo */
+.header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 150px; /* Ancho máximo para evitar que sea muy grande */
+}
+
+.header-logo img {
+    height: 65px; /* Tamaño adecuado para el logo */
+    width: auto;
+    object-fit: contain; /* Asegura que la imagen no se deforme */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.header-logo img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+    opacity: 0.9;
+}
+
+/* Estilos del texto */
+.header-text {
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.header-text h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 5px 0 0;
+    color: #d1e7ff;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .header-container {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .header-text {
+        text-align: left;
+    }
+}

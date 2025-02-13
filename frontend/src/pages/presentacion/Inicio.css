@@ -1,0 +1,71 @@
+/* Contenedor principal */
+.inicio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f5f9ff; /* Fondo azul muy claro */
+    min-height: 100vh;
+}
+
+/* Secciones individuales */
+.inicio-section {
+    background: #003366; /* Azul oscuro */
+    color: #ffffff;
+    padding: 15px 30px;
+    margin: 10px 0;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+/* Títulos */
+.inicio-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.inicio-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.inicio-section h3 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.inicio-section h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .inicio-section {
+        width: 100%;
+    }
+
+    .inicio-section h1 {
+        font-size: 2rem;
+    }
+
+    .inicio-section h2 {
+        font-size: 1.75rem;
+    }
+
+    .inicio-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .inicio-section h4 {
+        font-size: 1.25rem;
+    }
+}

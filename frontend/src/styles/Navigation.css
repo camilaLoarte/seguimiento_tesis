@@ -1,0 +1,63 @@
+/* Estilo general del navbar */
+.navbar {
+    background-color: #003366; /* Azul oscuro */
+    color: #ffffff; /* Texto blanco */
+    display: flex; /* Flexbox para alinear elementos */
+    justify-content: space-between; /* Espacia elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    padding: 20px 50px; /* Espaciado interno más amplio */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    position: sticky; /* Navbar fijo en la parte superior */
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo del navbar */
+.navbar-logo {
+    font-size: 2rem; /* Tamaño más grande para el texto */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.logo-link {
+    text-decoration: none; /* Sin subrayado */
+    color: #ffffff; /* Color blanco */
+    transition: color 0.3s ease;
+}
+
+.logo-link:hover {
+    color: #d1e7ff; /* Azul claro al pasar el mouse */
+}
+
+/* Menú de navegación */
+.navbar-menu {
+    display: flex; /* Flexbox para los enlaces */
+    gap: 30px; /* Más espacio entre los enlaces */
+}
+
+.nav-link {
+    text-decoration: none; /* Sin subrayado */
+    color: #ffffff; /* Texto blanco */
+    font-size: 1.2rem; /* Tamaño más grande del texto */
+    transition: color 0.3s ease; /* Animación para cambio de color */
+}
+
+.nav-link:hover {
+    color: #d1e7ff; /* Azul claro al pasar el mouse */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Coloca los elementos en columna */
+        align-items: flex-start; /* Alinea los elementos al inicio */
+        padding: 15px 20px; /* Ajusta el espaciado interno en pantallas pequeñas */
+    }
+
+    .navbar-menu {
+        flex-direction: column; /* Enlaces en columna */
+        gap: 15px; /* Espaciado más uniforme */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        text-align: left;
+        margin-top: 10px;
+    }
+}
