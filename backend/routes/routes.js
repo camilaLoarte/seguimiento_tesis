@@ -38,7 +38,7 @@ router.get('/tesis', async(req, res) => {
         })
     }
 })
-
+//ruta para obtener los tesistas
 router.get('/tesistas', async(req, res) => {
     try{
         const [tesistas] = await db.query('SELECT * FROM tesistas');
